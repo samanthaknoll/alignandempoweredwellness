@@ -1,86 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Root Pages -->
+  <!-- Homepage -->
   <url>
-    <loc>https://emeraldenergyinc.com/</loc>
-    <lastmod>2025-05-08</lastmod>
+    <loc>https://alignedandempoweredwellness.com/</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
+  <!-- Optional future SEO pages (add when created) -->
+
   <url>
-    <loc>https://emeraldenergyinc.com/about.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <loc>https://alignedandempoweredwellness.com/therapy-florida</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://emeraldenergyinc.com/contact.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <loc>https://alignedandempoweredwellness.com/anxiety-therapy-florida</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Service Overview -->
   <url>
-    <loc>https://emeraldenergyinc.com/services/index.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <loc>https://alignedandempoweredwellness.com/relationship-counseling-florida</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- Top Priority Services -->
-  <url>
-    <loc>https://emeraldenergyinc.com/services/parrish-residential-electrician.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://emeraldenergyinc.com/services/parrish-emergency-electrician.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- Standard Services -->
-  <url>
-    <loc>https://emeraldenergyinc.com/services/electrical-contracting.html</loc>
-    <lastmod>2025-05-08</lastmod>
+    <loc>https://alignedandempoweredwellness.com/coaching</loc>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://emeraldenergyinc.com/services/parrish-storm-repair-restoration.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://emeraldenergyinc.com/services/fabrication.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://emeraldenergyinc.com/services/excavation.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <url>
-    <loc>https://emeraldenergyinc.com/services/business-consulting.html</loc>
-    <lastmod>2025-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <loc>https://alignedandempoweredwellness.com/contact</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

@@ -833,6 +833,31 @@ details p {
   margin-top: 16px;
 }
 
+/* Remove default arrow (ALL browsers) */
+details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Remove arrow in Chrome/Safari */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow */
+details summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.2rem;
+  color: var(--muted-orchid);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate when open */
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+
 /* PRE CONTACT CTA */
 
 .pre-contact-section {

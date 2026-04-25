@@ -529,8 +529,18 @@ color: var(--ink); /* fixes white text */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+gap:16px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: 18px 20px;
+  }
+
+  .accordion-icon {
+    font-size: 20px;
+  }
 }
 
 /* Icon */
@@ -853,24 +863,28 @@ details p {
   margin-top: 16px;
 }
 
-/* Remove default arrow (ALL browsers) */
 details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   list-style: none;
-  cursor: pointer;
 }
 
-/* Remove arrow in Chrome/Safari */
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Custom arrow */
 details summary::after {
   content: "+";
-  float: right;
-  font-size: 1.2rem;
+  float: none;
+  flex-shrink: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--muted-orchid);
-  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 /* Rotate when open */

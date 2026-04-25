@@ -820,6 +820,12 @@ color: var(--ink); /* fixes white text */
   font-size: 0.92rem;
 }
 
+@media (max-width: 768px) {
+  .location-grid {
+    justify-content: center;
+  }
+}
+
 /* FAQ */
 
 .faq-section {
@@ -1116,11 +1122,6 @@ button {
     padding: 32px;
   }
 
-
-
-  .location-grid {
-    justify-content: flex-start;
-  }
 
   .site-footer {
     padding: 52px 6% 28px;

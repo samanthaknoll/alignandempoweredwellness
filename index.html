@@ -492,12 +492,23 @@
       A free 15-minute consultation gives you a chance to share what you’re looking for, ask questions, and see if working together feels like the right fit.
     </p>
 
-    <form>
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea placeholder="What would you like support with?"></textarea>
-      <button type="submit">Book a Free Consultation</button>
-    </form>
+<form name="consultation" method="POST" netlify netlify-honeypot="bot-field">
+
+  <input type="hidden" name="form-name" value="consultation">
+
+  <p style="display:none">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
+
+  <input type="text" name="name" placeholder="Your name" required>
+
+  <input type="email" name="email" placeholder="Your email" required>
+
+  <textarea name="message" placeholder="What would you like support with?"></textarea>
+
+  <button type="submit">Book a Free Consultation</button>
+
+</form>
   </div>
 </section>
 

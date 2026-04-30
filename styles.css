@@ -162,42 +162,22 @@ section {
 }
 
 @media (max-width: 768px) {
+  .custom-nav {
+    padding: 10px 6%;
+  }
 
   .navbar-brand {
-    gap: 6px; /* tighter spacing */
-    font-size: 1.1rem; /* slightly smaller */
-  }
-
-  .navbar-collapse {
-    text-align: right;
-  }
-
-    .navbar-nav {
-    align-items: flex-end; /* key fix */
-    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+    font-size: 1.1rem;
+    max-width: calc(100% - 58px);
   }
 
   .nav-logo {
-    height: 42px; /* was 72px */
-  }
-
-    .nav-item {
-    width: 100%;
-    text-align: right;
-  }
-
-  .nav-link {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-right: 0; /* removes awkward spacing */
-  }
-
-    .nav-cta {
-    display: inline-block;
+    height: 42px;
     width: auto;
-    margin-left: auto;
-    text-align: center; /* keeps text centered inside button */
   }
 
   .brand-text {
@@ -210,6 +190,39 @@ section {
     margin-top: 2px;
   }
 
+  .navbar-collapse {
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    align-items: flex-end;
+    padding-top: 12px;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 0;
+    white-space: nowrap;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
+    margin: 12px 0 0 auto;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
 
 
@@ -772,13 +785,10 @@ gap:16px;
   background-position: center;
 }
 
-/* Dark overlay for readability */
 .coaching-overlay {
   position: absolute;
   inset: 0;
-background: rgba(0, 0, 0, 0.7); /* adjust darkness here */
-  
-  );
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Content container */
@@ -1150,9 +1160,7 @@ button {
     padding: 46px;
   }
 
-  .nav-cta {
-    margin: 12px 0 0;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -1431,5 +1439,3 @@ button {
   background: #4f604b;
   color: #fff;
 }
-
-o

@@ -1075,6 +1075,27 @@ button {
   font-weight: 700;
 }
 
+/* Thank You Page Styling */
+.thank-you-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.thank-you-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.thank-you-section p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
 /* FOOTER */
 
 .site-footer {

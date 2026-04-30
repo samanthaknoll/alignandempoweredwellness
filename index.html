@@ -578,7 +578,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
 
 <script>
 const slides = document.querySelectorAll(".testimonial-slide");
@@ -625,6 +625,18 @@ accordionItems.forEach(item => {
   });
 });
 </script>
+<script>
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const navLinks = document.querySelectorAll('.navbar-collapse .nav-link, .navbar-collapse .nav-cta');
 
-
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    });
+  });
+</script>
+</body>
 </html>

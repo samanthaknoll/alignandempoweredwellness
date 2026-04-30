@@ -128,7 +128,7 @@ section {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--muted-text);
-  margin: 0 5px;
+  margin: 0 0px;
 }
 
 .nav-link:hover {

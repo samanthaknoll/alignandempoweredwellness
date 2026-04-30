@@ -9,8 +9,8 @@
   --warm-white: #fffdf9;
   --soft-blush: #f5ece8;
   --soft-orchid: #eaddea;
-  --orchid: #c9abc9;
-  --muted-orchid: #a986a8;
+  --orchid: #8fa086;       /* soft sage */
+--muted-orchid: #5f705b; /* deeper sage */
   --sage-light: #e5ece3;
   --sage: #8fa086;
   --sage-deep: #5f705b;
@@ -160,6 +160,59 @@ section {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    gap: 6px; /* tighter spacing */
+    font-size: 1.1rem; /* slightly smaller */
+  }
+
+  .navbar-collapse {
+    text-align: right;
+  }
+
+    .navbar-nav {
+    align-items: flex-end; /* key fix */
+    width: 100%;
+  }
+
+  .nav-logo {
+    height: 42px; /* was 72px */
+  }
+
+    .nav-item {
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 0; /* removes awkward spacing */
+  }
+
+    .nav-cta {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    text-align: center; /* keeps text centered inside button */
+  }
+
+  .brand-text {
+    line-height: 1;
+  }
+
+  .navbar-brand span {
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    margin-top: 2px;
+  }
+
+}
+
+
 
 /* HERO */
 
@@ -464,7 +517,7 @@ details {
   place-items: center;
   border-radius: 50%;
   background: rgba(201, 171, 201, 0.14);
-  color: var(--muted-orchid);
+  color: var(--sage-deep);
   box-shadow: 0 8px 18px rgba(79, 65, 54, 0.045);
 }
 
@@ -714,7 +767,7 @@ gap:16px;
   color: #fff;
 
   background:
-    url("https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/66/70/a8/fd/a6/v1_E10/E10ZWPO.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=d1ff6668bfc6ce1a89150327a2d67d741c8735a7e55ec7daa0c94140dc1c7530");
+    url("images/coaching_image_aligned_and_empowered_therapy_florida.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -723,15 +776,16 @@ gap:16px;
 .coaching-overlay {
   position: absolute;
   inset: 0;
-
-  background: rgba(0, 0, 0, 0.55);
+background: rgba(0, 0, 0, 0.7); /* adjust darkness here */
+  
+  );
 }
 
 /* Content container */
 .coaching-content {
   position: relative;
   z-index: 1;
-  max-width: 1100px;
+ max-width: 1400px; 
   margin: 0 auto;
 }
 
@@ -747,8 +801,8 @@ gap:16px;
 /* Grid */
 .coaching-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px 60px;
+  grid-template-columns: repeat(2, minmax(500px, 1fr));
+  gap: 50px 80px; /* more breathing room */
 }
 
 /* Items */
@@ -767,6 +821,29 @@ gap:16px;
   color: rgba(255,255,255,0.85);
   font-size: 0.95rem;
   max-width: 440px;
+}
+
+/* ===== COACHING INTRO ===== */
+.coaching-intro {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.coaching-intro p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 14px;
+}
+
+.coaching-note {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* CTA */
+.coaching-cta {
+  margin-top: 50px;
+  font-weight: 600;
+  color: #fff;
 }
 
 /* Mobile */
@@ -1087,25 +1164,6 @@ button {
     padding: 14px 6%;
   }
 
-  /* Right-align navbar items on mobile */
-  .navbar-nav {
-    text-align: right;
-  }
-
-  .nav-item {
-    text-align: right;
-  }
-
-  .nav-link {
-    display: inline-block;
-    text-align: right;
-  }
-
-  .nav-cta {
-    display: block;
-    text-align: center;
-  }
-
   .hero-section {
     padding: 125px 6% 78px;
     background:
@@ -1213,7 +1271,7 @@ button {
 
   border-radius: 50%;
   background: rgba(201, 171, 201, 0.18);
-  color: #a986a8;
+  color: var(--sage-deep);;
   font-size: 18px;
 }
 
@@ -1245,7 +1303,7 @@ button {
   background: none;
   border: none;
   font-size: 26px;
-  color: #a986a8;
+   color: var(--sage-deep);
   cursor: pointer;
 }
 
@@ -1286,14 +1344,14 @@ button {
   height: 10px;
   width: 10px;
   margin: 0 6px;
-  background-color: rgba(169, 134, 168, 0.4);
+    background-color: rgba(143, 160, 134, 0.4);
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
 }
 
 .dot.active {
-  background-color: #a986a8;
+ background-color: var(--sage-deep);
 }
 
 /* Mobile */
@@ -1374,3 +1432,4 @@ button {
   color: #fff;
 }
 
+o

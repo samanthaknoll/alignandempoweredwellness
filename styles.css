@@ -708,13 +708,21 @@ gap:16px;
   inset: 0;
 
   /* darker, smooth overlay for readability */
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.35) 45%,
-    rgba(0, 0, 0, 0.15) 75%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.35) 45%,
+      rgba(0, 0, 0, 0.15) 75%,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.18) 35%,
+      rgba(0, 0, 0, 0.08) 65%,
+      rgba(0, 0, 0, 0.03) 100%
+    );
 }
 
 @media (max-width: 768px) {
@@ -1386,7 +1394,8 @@ button {
 /* Mobile */
 @media (max-width: 768px) {
   .testimonial-text {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
   }
 
   .testimonial-arrow.left {
